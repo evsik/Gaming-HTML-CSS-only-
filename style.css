@@ -504,6 +504,10 @@ footer {
         height: 50px;
         line-height: 50px;
     }
+
+    .header-contacts{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 350px) {
