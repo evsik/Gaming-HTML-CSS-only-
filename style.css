@@ -149,7 +149,7 @@ header {
 
 }
 
-.content-header, .contacts-head, .map-head {
+.content-header, .contacts-head, .map-head, .similar-head {
     margin-bottom: 6%;
     text-align: center;
     color: #f44336;
