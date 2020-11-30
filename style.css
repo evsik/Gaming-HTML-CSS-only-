@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #f7f7f7;
 }
 
@@ -149,7 +149,7 @@ header {
 
 }
 
-.content-header {
+.content-header, .contacts-head, .map-head {
     margin-bottom: 6%;
     text-align: center;
     color: #f44336;
@@ -217,6 +217,14 @@ header {
     background-color: #f44336;
 }
 
+.catalog-button:hover, .input-submit:hover {
+    opacity: 0.5;
+}
+
+.catalog-button:active, .input-submit:active{
+    opacity: 0.1;
+}
+
 .show-more {
     display: inline-block;
     border: 1px solid #000000;
@@ -231,6 +239,15 @@ header {
     text-decoration: none;
 }
 
+.show-more:hover{
+    background-color: #f44336;
+    opacity: 0.5;
+}
+
+.show-more:active{
+    opacity: 0.1;
+}
+
 .slider {
     flex-wrap: wrap;
     display: flex;
@@ -243,6 +260,7 @@ header {
     background: url(images/sliderFirst.jpg);
     background-size: cover;
 }
+
 .slider-item:last-child {
     padding: 11% 0 6% 3%;
 }
@@ -291,7 +309,7 @@ header {
     text-decoration: line-through;
 }
 
-.item-button{
+.item-button {
     text-align: center;
     width: 265px;
     height: 62px;
@@ -299,33 +317,27 @@ header {
     font-size: 30px;
 }
 
-footer{
+footer {
     flex: 0 0 auto;
     padding-top: 8%;
 }
 
-.contacts{}
-
-.contacts-head{
+.contacts {
     margin-bottom: 6%;
-    color: #f44336;
-    font-family: Poppins, sans-serif;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 48px;
-    text-align: center;
 }
 
-.contacts-form-block{
+.contacts-form-block {
+    /*flex-flow: wrap-reverse;*/
     display: flex;
-    width: 50%;
-    margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 0 1% 0 1%;
 }
 
-.contacts-info{}
+.contacts-info {
+    margin-right: 10%;
+}
 
-.contacts-info-head{
+.contacts-info-head {
     color: #f44336;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 26px;
@@ -333,7 +345,7 @@ footer{
     line-height: 48px;
 }
 
-.contacts-info-text{
+.contacts-info-text {
     color: #9e9e9e;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 14px;
@@ -341,13 +353,14 @@ footer{
     line-height: 17px;
 }
 
-.contacts-info-text span{
+.contacts-info-text span {
     color: #f44336;
 }
 
-.contacts-forms{}
+.contacts-forms {
+}
 
-.input-name, .input-email, .input-message{
+.input-name, .input-email, .input-message {
     margin-bottom: 4%;
     padding-left: 3%;
     width: 471px;
@@ -358,14 +371,15 @@ footer{
     font-weight: 400;
 }
 
-.input-email{}
+.input-email {
+}
 
-.input-message{
+.input-message {
     height: 138px;
     padding-bottom: 95px;
 }
 
-.input-submit{
+.input-submit {
     width: 140px;
     height: 39px;
     background-color: #f44336;
@@ -381,6 +395,35 @@ footer{
     cursor: pointer;
 }
 
+.map-block {
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.map iframe {
+    width: 65%;
+    height: 300px;
+}
+
+.basement {
+    background-color: #000000;
+    min-height: 70px;
+    text-align: center;
+}
+
+.basement-text {
+    color: #ffffff;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 70px;
+}
+
+.basement-text span {
+    color: #f44336;
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -402,11 +445,32 @@ footer{
     .slider-item {
         width: 100%;
     }
+
+    .map iframe {
+        width: 90%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     .logo, .header-contacts {
         margin-bottom: 15px;
+    }
+
+    .contacts-form-block {
+        text-align: center;
+    }
+
+    .contacts-info {
+        margin: 0;
+    }
+
+    .contacts-form-block {
+        flex-direction: column-reverse;
+    }
+
+    .input-name, .input-email, .input-message {
+        width: 80%;
     }
 }
 
@@ -415,20 +479,30 @@ footer{
         width: 100%;
     }
 
-    .item-name{
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .item-name {
         font-size: 14px;
     }
 
-    .item-head{
+    .item-head {
         font-size: 30px;
     }
 
-    .item-content{
+    .item-content {
         font-size: 50px;
     }
 
-    .item-content span{
+    .item-content span {
         font-size: 26px;
+    }
+
+    .item-button {
+        width: 212px;
+        height: 50px;
+        line-height: 50px;
     }
 }
 
