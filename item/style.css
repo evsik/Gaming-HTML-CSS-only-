@@ -21,9 +21,6 @@
     display: inline-block;
 }
 
-.item-images-link {
-}
-
 .item-images-picture {
     width: 100%;
 }
@@ -73,22 +70,12 @@
     padding: 3% 0 3% 0;
 }
 
-.similar-head {
-}
-
 .similar-catalog-list:first-child .items-name {
     margin: 0;
 }
 
 .similar-catalog-list:nth-of-type(2) .items-name {
     margin-bottom: 20px;
-}
-
-
-@media screen and (max-width: 1200px) {
-}
-
-@media screen and (max-width: 992px) {
 }
 
 @media screen and (max-width: 768px) {
