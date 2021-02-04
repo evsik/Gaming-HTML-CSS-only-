@@ -246,7 +246,7 @@ header {
 .slider-item {
     width: 50%;
     padding: 9% 0 6% 3%;
-    background: url(images/sliderFirst.jpg);
+    background: url(../images/sliderFirst.jpg);
     background-size: cover;
 }
 
@@ -255,7 +255,7 @@ header {
 }
 
 .slider-item:last-child {
-    background: url(images/sliderSecond.jpg);
+    background: url(../images/sliderSecond.jpg);
     background-size: cover;
 }
 
